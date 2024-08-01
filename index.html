@@ -20,14 +20,16 @@
 <h1>Desserts</h1>
   <div class="item1" id="cake">
 
-<div>
+<div id="appearence">
   <img src="assets/images/image-waffle-desktop.jpg" alt=""> <br>
+
   <button id="btn">
     <img src="assets/images/icon-add-to-cart.svg" alt="">
     Add to Cart
   </button> 
 </div>
 
+<!-- all divs named  dessertDetails contain both the price and the name of the dessert -->
 <div id="dessertDetails">
   <p id="dessertName">Waffle with Berries</p> 
   <p id="price">$6.50</p>
@@ -35,41 +37,45 @@
   </div>
 
   <div class="item2" id="cake">
-<div>
+    <!--all divs of id appearence contain the image of the dessert an the "add to cart" button-->
+<div id="appearence">
   <img src="assets/images/image-creme-brulee-desktop.jpg" alt="">
   <br>
-   <button>
+
+   <button id="btn">
      <img src="assets/images/icon-add-to-cart.svg" alt="">
      Add to Cart
    </button>
 
 </div>
 <div class="dessertDetails">
+<!-- paragraph of id named dessertName and price contain the name of the dessert and their price respectively -->
   <p id="dessertName">Vanilla Bean Crème Brûlée </p>
   <p id="price">$7.00</p>
 </div>
   </div>
 
   <div class="item3" id="cake">
-    <div>
+    <div id="appearence">
       
      <img src="assets/images/image-macaron-desktop.jpg" alt=""> <br>
 
-     <button><img src="assets/images/icon-add-to-cart.svg" alt="">
+     <button id="btn">>
+      <img src="assets/images/icon-add-to-cart.svg" alt="">
      Add to Cart
      </button>
     </div>
     <div class="dessertDetails">
-      <p>Macaron Mix of Five </p>
+      <p id="dessertName">Macaron Mix of Five </p>
       <p id="price">$8.00</p> 
     </div>
   </div>
 
 
   <div class="item4" id="cake">
-<div>
+<div id="appearence">
   <img src="assets/images/image-tiramisu-desktop.jpg" alt=""> <br>
-  <button>
+  <button id="btn">
     <img src="assets/images/icon-add-to-cart.svg" alt="">
  Add to Cart
   </button>
@@ -81,9 +87,10 @@
   </div>
 
   <div class="item5" id="cake">
-<div>
+<div id="appearence">
   <img src="assets/images/image-baklava-desktop.jpg" alt=""> <br>
-      <button>
+
+      <button id="btn">
         <img src="assets/images/icon-add-to-cart.svg" alt="">
         Add to Cart
       </button>
@@ -96,9 +103,9 @@
 
   <div class="item6" id="cake">
 
-    <div>
+    <div id="appearence">
       <img src="assets/images/image-meringue-desktop.jpg" alt=""> <br>
-      <button>
+      <button id="btn">
         <img src="assets/images/icon-add-to-cart.svg" alt="">
        Add to Cart
       </button>
@@ -111,9 +118,10 @@
   </div>
 
   <div class="item7" id="cake">
-    <div>
+    <div id="appearence">
       <img src="assets/images/image-cake-desktop.jpg" alt=""> <br>
-        <button>
+
+        <button id="btn">
           <img src="assets/images/icon-add-to-cart.svg" alt="">
         Add to Cart
         </button>
@@ -125,22 +133,25 @@
   </div>
 
   <div class="item8" id="cake">
-    <div>
+    <div id="appearence">
       <img src="assets/images/image-brownie-desktop.jpg" alt=""> <br>
-      <button>
+      <button id="btn">
         <img src="assets/images/icon-add-to-cart.svg" alt="">
        Add to Cart
       </button> 
     </div>
-<div class="dessertDetails">
+
+  <div class="dessertDetails">
       <p id="dessertName">Salted Caramel Brownie</p> 
       <p id=" price"> $4.50</p>
   </div>
+  </div>
 
   <div class="item9" id="cake">
-    <div>
+    <div id="appearence">
       <img src="assets/images/image-panna-cotta-desktop.jpg" alt=""> <br>
-      <button>
+
+      <button id="btn">
        <img src="assets/images/icon-add-to-cart.svg" alt="">
       Add to Cart
      </button>
@@ -157,6 +168,7 @@
 
 <h1>Your Cart (Quantity)</h1> 
      <img src="assets/images/illustration-empty-cart.svg" alt=""> 
+     
      <div id="orderedItemsDisply">
        <p>Your added items will appear here</p>
      </div>
@@ -165,7 +177,7 @@
         <img src="assets/images/icon-carbon-neutral.svg" alt="">
         this is a carbon neutral delivery
       </p>
-     <button>Confirm Order</button>
+     <button id="orderBtn">Confirm Order</button>
 </div>
 
 <script src="script.js"></script>
