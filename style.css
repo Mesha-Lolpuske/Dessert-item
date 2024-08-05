@@ -46,21 +46,45 @@ body{
 .dessert{
    display: grid;
    grid-template-rows:5vh 85vh ;
-  place-items:center ;
+   place-items:center ;
    border-style: dashed;
-   
+}
+
+h1{
+  font-weight: 600;
+  font-size: 30px;
+
 }
 /*container with all 9 items*/
 .items{
     display: grid;
     grid-template-columns:20vw 20vw 20vw ;
-border-style: dotted;
+    grid-column-gap: 1em;
+    border-style: dotted;
 }
+/* .item1,.item2,.item3, .item4,.item5,.item6,.item7,.item8,.item9{
+  display: grid;
+  grid-template-rows: 20vh;
+  border: 2px solid darkblue;
+} */
+
 
 /*container with the ordercontainer*/
 .orderInfo{
   background-color: beige;
   border:1px solid black;
-  border-radius:10px ;
+  border-radius:10px;
+  height: 45vh;
+  width: 25vw;
+}
+
+#orderBtn{
+  height: 35px;
+  width: 330px;
+  background-color: red;
+  border-radius: 15px;
+  color: #fff;
+  margin-top: 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
