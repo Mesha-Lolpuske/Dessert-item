@@ -28,7 +28,10 @@
 body{
   width: 100vw;
   height:100vh;
-  background-color:#fff ;
+  background-color:
+hsl(13, 31%, 94%)
+  
+  ;
   color:black;
   font-family:"Poppins",sans-serif;
 
@@ -38,7 +41,7 @@ body{
 .container{
     display: grid;
     grid-template-columns:65vw 30vw ;
-    grid-column-gap:1.5em ;
+    grid-column-gap:6em ;
 
 
 }
@@ -46,45 +49,83 @@ body{
 .dessert{
    display: grid;
    grid-template-rows:5vh 85vh ;
-   place-items:center ;
-   border-style: dashed;
+   
+  
 }
 
-h1{
+ .dessert h1{
   font-weight: 600;
-  font-size: 30px;
+  font-size: 20px;
+  margin-left:150px ;
 
 }
 /*container with all 9 items*/
 .items{
     display: grid;
-    grid-template-columns:20vw 20vw 20vw ;
-    grid-column-gap: 1em;
-    border-style: dotted;
+    grid-template-columns:25vw 25vw 22vw ;
+    grid-column-gap:20px;
+    place-items:center ;
+    grid-auto-rows:35vh ;
 }
-/* .item1,.item2,.item3, .item4,.item5,.item6,.item7,.item8,.item9{
-  display: grid;
-  grid-template-rows: 20vh;
-  border: 2px solid darkblue;
-} */
+.dessert-image{
 
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+.image{
+  width:20vh;
+  height:15vh;
+}
+.item1 ,.item2 ,.item3 ,.item4,.item5,.item6, .item7,.item8,.item9{
+  
+  display:flex;
+  flex-direction: column;
+  gap:0.5em;
+  align-items: center;
+  justify-content: center;
 
+  width:25vw ;
+}
+#dessertName{
+  font-weight: 700;
+  font-size:15px ;
+}
+
+#btn{
+  margin-top:15px ;
+}
 /*container with the ordercontainer*/
 .orderInfo{
-  background-color: beige;
-  border:1px solid black;
+  background-color:white;
+  border:0.5px white ;
   border-radius:10px;
-  height: 45vh;
-  width: 25vw;
+  height: 70vh;
+  width: 20vw;
+  margin-top:20px ;
+  display: grid;
+  grid-template-rows:40% 20% 15%  10% ;
+  grid-row-gap:5px ;
+  
 }
-
+.orderInfo h1{
+  font-size: 15px;
+  font-weight:600;
+  color:hsl(14, 86%, 42%);
+  margin-left:5px;
+}
 #orderBtn{
-  height: 35px;
-  width: 330px;
-  background-color: red;
-  border-radius: 15px;
-  color: #fff;
-  margin-top: 10px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color:hsl(14, 86%, 42%)
+  ;
+  text-align: center;
+border-radius:15px ;
+border-style: none;
+margin-left: 5px;
 }
 
+.neutral{
+  background-color:rgb(240, 215, 220);
+  font-size:12px ;
+  text-align: center;
+  margin-left:5px ;
+}
